@@ -7,10 +7,12 @@ export default function Player({ initialName, symbol, isActive}) {
   }
   function handleChange(event) {
     console.log(event);
+    console.log("Amiroo")
     setPlayerName(event.target.value);
   }
 
-  //   let btnCaption = "Edit";
+  //   let btnCaption = "Edit"
+  // new 
   let editablePlayerName = <span className="player-name">{playerName}</span>;
   if (isEdititng) {
     editablePlayerName = (
